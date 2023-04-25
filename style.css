@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2? family= Passion+One & family= Sriracha & display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Sriracha & display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+    
+}
+/* Estilizando corpo do meu documento */
+html, body 
+{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+/* Estilizando o cabeçalho do meu site */
+header 
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* Estilizando o meu h1 dentro do cabeçalho */
+header > h1 
+{
+   padding-top: 50px; 
+   font-variant: small-caps;/* Letras maiusculas */
+   font-family: var(--fonte2);
+   font-size: 10vw;/* Adaptar tamanho de texto pra telas*/
+}
+
+/* Estilizando o paragrafo dentro do meu cabeçalho */
+header > p 
+{
+    padding-bottom: 50px;
+}
+
+/* Estilizando link */
+header a, footer a
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/* Estilizando link com efeito hover*/
+header a:hover, footer a:hover 
+{
+    text-decoration: underline;
+}
+
+/* Configurando section pai para fazer efeito parallax */
+section
+{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;/* Espaço altura entre linhas da fonte */
+    padding: 20px;
+    font-family: var(--fonte3);
+    font-size: 2em;
+}
+
+/* Estilo paragrafo dentro da section */
+section > p
+{
+    padding-bottom: 3em;
+}
+
+section.normal
+{
+    background-color: white;
+    color: black;
+}
+
+section.img
+{
+    background-color: rgba(22, 21, 21, 0.774);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.404);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.img > p
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    display: inline-block;
+    box-shadow: 1px 1px 0px black;
+    
+}
+
+/* Imagem 02 do efeito parallax */
+section#img01
+{
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+}
+
+/* Imagem 02 do efeito Parallax*/
+section#img02
+{
+    background-image: url('imagens/background002.jpg');
+    
+    
+}
+
+footer
+{
+    background-color: black;
+    color: white;
+    text-align: center;/* Centralizar texto */
+    padding: 10px;
+} 
